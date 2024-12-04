@@ -1,0 +1,128 @@
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+    border-radius: 5px;
+    display: flex;
+    
+}
+
+.cart-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+}
+
+button.remove-item {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.remove-item:hover {
+    background-color: #cc0000;
+}
+
+#cart-buttons {
+    margin-top: 20px;
+    text-align: center; /* Center the buttons within the container */
+}
+
+#cart-buttons button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Change cursor to pointer */
+    margin: 5px; /* Add spacing between buttons */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#cart-buttons button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#place-order {
+    background-color: #007BFF; /* Blue background specific to Place Order */
+}
+
+#place-order:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+button#confirm-checkout {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button#confirm-checkout:hover {
+    background-color: #45a049;
+}
+/* Set consistent size for images in both cart and checkout */
+.cart-item-image,
+.checkout-item-image {
+    width: 100px;  /* Or your preferred size */
+    height: 100px; /* Keep the aspect ratio consistent */
+    object-fit: cover; /* Ensures the image covers the space without distorting */
+}
+
+

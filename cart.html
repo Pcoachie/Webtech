@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <title>Your Cart</title>
+</head>
+
+<body>
+<header>
+    <div class="logo"><a href="index.html">HOME</a></div>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="cart.html">CART</a></li>
+            <li><a href="shop.html">Shop</a></li>
+        </ul>
+    </div>
+</header>
+
+
+<section id="cartSection">
+    <div id="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div> <!-- Cart Items Container -->
+        <div id="cart-buttons">
+            <button id="clear-cart">Clear Cart</button>
+            <button id="place-order">Place Order</button>
+        </div>
+    </div>
+</section><footer>
+    <div id="footer" class="footer0">
+    <h1>CODEWITHRANDOM</h1>
+    </div>
+    <div class="footer1 ">
+    Connect with us at<div class="social-media">
+    <a href="#">
+    <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+    <a href="#">
+    <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+    <a href="#">
+    <ion-icon name="logo-youtube"></ion-icon>
+    </a>
+    <a href="#">
+    <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+    <a href="#">
+    <ion-icon name="logo-twitter"></ion-icon>
+    </a>
+    </div>
+    </div>
+    <div class="footer2">
+    <div class="product">
+    <div class="heading">Products</div>
+    <div class="div">Sell your Products</div>
+    <div class="div">Advertise</div>
+    <div class="div">Pricing</div>
+    <div class="div">Product Buisness</div>
+    
+    </div>
+    <div class="services">
+    <div class="heading">Services</div>
+    <div class="div">Return</div>
+    <div class="div">Cash Back</div>
+    <div class="div">Affiliate Marketing</div>
+    <div class="div">Others</div>
+    </div>
+    <div class="Company">
+    <div class="heading">Company</div>
+    <div class="div">Complaint</div>
+    <div class="div">Careers</div>
+    <div class="div">Affiliate Marketing</div>
+    <div class="div">Support</div>
+    </div>
+    <div class="Get Help">
+    <div class="heading">Get Help</div>
+    <div class="div">Help Center</div>
+    <div class="div">Privacy Policy</div>
+    <div class="div">Terms</div>
+    <div class="div">Login</div>
+    </div>
+    </div>
+    <div class="footer3">Copyright © <h4>ShoPperZ</h4> 2021-2028</div>
+    </footer>
+
+<!-- Checkout Modal -->
+<div id="checkout-modal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Checkout Summary</h2>
+        <div id="checkout-items">
+            <!-- Selected items will be dynamically added here -->
+        </div>
+        <div class="checkout-total">
+            <p><strong>Total Price:</strong> $<span id="checkout-total-price">0.00</span></p>
+        </div>
+        <button id="confirm-checkout">Confirm Order</button>
+    </div>
+</div>
+
+<script src="cart.js"></script> <!-- Ensure your script is included here -->
+</body>
+</html>
